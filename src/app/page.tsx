@@ -1,14 +1,11 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { useAuthActions } from "@convex-dev/auth/react";
+import UserButton from "@/features/auth/components/user-button";
 
 const Page = () => {
-  const { signOut } = useAuthActions();
   return (
     <div className="h-full">
-      Root Page
-      <Button onClick={() => signOut()}>Sign Out</Button>
+      <UserButton />
     </div>
   );
 };
